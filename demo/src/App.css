@@ -1,0 +1,7 @@
+.app-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two equal-height rows */
+  grid-template-columns: 1fr 1fr 1fr; /* Three equal-width columns */
+  gap: 10px; /* Optional spacing between components */
+  padding: 10px;
+}
