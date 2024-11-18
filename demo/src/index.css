@@ -33,7 +33,9 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-
+  flex-direction: column;
+  overflow-x: hidden;
+  place-items: center;
 }
 
 h1 {
@@ -73,10 +75,13 @@ button:focus-visible {
   margin: 15px;
   text-align: center;
   width: 250px;
-  transition: 0.2s;
+  max-width: 200px;
+  min-width: 100px;
+  transition: 0.2s ease-in-out;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  flex: 0 1 200px;
+  justify-content: center;
   align-items: center;
   gap: 15px;
 }
@@ -113,16 +118,22 @@ button:focus-visible {
 
 .card-container{
   display: flex;
+  flex-direction: row;
+  flex-grow: 1;
   justify-content: center;
+  align-items: flex-start;
+  width: 100%;
   flex-wrap: wrap;
+  overflow: hidden;
   gap: 20px;
+  box-sizing: border-box;
 }
 
 
 .app-container{
   text-align: center;
-  padding: 20px;
-  
+  width: 100%;
+  max-width: 100%;
   color: #fff;
 
 }
@@ -139,3 +150,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@media (max-width: 1200px){
+  .card{
+    flex: 1 1 18%;
+  }
+}
+
+@media (max-width: 768px){
+  .card{
+    flex: 1 1 22%;
+  }
+}
+
+@media (max-width: 480px){
+  .card{
+    flex: 1 1 100%;
+  }
+}
+
+
+
