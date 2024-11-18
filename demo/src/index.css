@@ -35,6 +35,7 @@ body {
   min-height: 100vh;
   flex-direction: column;
   overflow-x: hidden;
+  justify-content: center;
   place-items: center;
 }
 
@@ -88,6 +89,7 @@ button:focus-visible {
 
 .card:hover{
   transform: scale(1.05);
+  box-shadow: 1px 1px 10px 10px #646cff;
 }
 
 .card img{
@@ -124,7 +126,7 @@ button:focus-visible {
   align-items: flex-start;
   width: 100%;
   flex-wrap: wrap;
-  overflow: hidden;
+  overflow: visible;
   gap: 20px;
   box-sizing: border-box;
 }
