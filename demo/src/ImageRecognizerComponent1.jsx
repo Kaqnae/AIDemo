@@ -30,7 +30,7 @@ function ImageRecognizerComponent1() {
 
             console.log(predictedIndex);
 
-            if(predictedIndex === 1){
+            if(predictedIndex === 2){
                 document.getElementById('i1').value = 'Cat';
             }else{
                 document.getElementById('i1').value = 'Not a cat'

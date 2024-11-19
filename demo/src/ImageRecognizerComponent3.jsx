@@ -28,7 +28,7 @@ function ImageRecognizerComponent3() {
             // Get the class index with the highest probability
             const predictedIndex = prediction.argMax(1).dataSync()[0];
             
-            if(predictedIndex === 1){
+            if(predictedIndex === 0){
                 document.getElementById('i3').value = 'Bear';
             }else{
                 document.getElementById('i3').value = 'Not a bear';

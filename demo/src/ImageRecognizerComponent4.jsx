@@ -28,7 +28,7 @@ function ImageRecognizerComponent4() {
             // Get the class index with the highest probability
             const predictedIndex = prediction.argMax(1).dataSync()[0];
             
-            if(predictedIndex === 1){
+            if(predictedIndex === 2){
                 document.getElementById('i4').value = 'Cat';
             }else{
                 document.getElementById('i4').value = 'Not a cat';
